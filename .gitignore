@@ -1,0 +1,13 @@
+helloVenv
+
+ReadMe.txt
+
+__pycache__
+
+*.DS_Store
+
+#*.db
+
+#wsgi.py
+
+*.sqbpro

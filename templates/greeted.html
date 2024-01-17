@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <link rel="stylesheet" href="/static/css/dbPresentedStyle.css">
+
+  <h2>
+    Greeted:
+  </h2>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Surname</th>
+    </tr>
+    <!--
+      list bd_data passed from .py file is iterated over
+        with each item of the list referred to as "an_item"
+      From review of this structure (by printing in .py file)
+        we know each item has three elements so we can create a new row for each
+         item and call each of the three elements 0, 1 and 2 in order
+    -->
+  {% for an_item in db_data %}
+    <tr>
+      <td>{{ an_item[0] }}</</td>
+      <td>{{ an_item[1] }}</td>
+      <td>{{ an_item[2] }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+
+  <section>
+    <p>
+      <a href="/hello">Say Hello</a>
+    </p>
+  </section>
+
+{% endblock %}

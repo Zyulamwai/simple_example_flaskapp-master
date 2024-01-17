@@ -1,0 +1,11 @@
+h2 {
+  color: rebeccapurple;
+}
+
+table{
+  margin-left: 5%;
+}
+
+th, td{
+  border: thin solid black;
+}

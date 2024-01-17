@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>
+      Hi, Python!
+    </title>
+
+    <link rel="stylesheet" href="/static/css/homeStyle.css">
+
+  </head>
+
+  <body>
+
+  <h2>
+    Hello,
+      <span id="firstName">
+        {{ firstname }}
+      </span>
+      <span id="surName">
+        {{ surname }}
+      </span>
+      !
+  </h2>
+
+    <!--
+      We can start using some form here to capture data from a user, using Python
+        and JS.  Lower down we can reference the JS script and any logic we might need.
+    -->
+
+    <section>
+
+      <form action="/homeForm_1" method="POST", id="homeForm_1" name="homeForm_1">
+
+        <label> first name:
+          <input type="text" name="firstname">
+        </label>
+
+        <span class="newLine"></span>
+
+        <label> surname:
+          <input type="text" name="surname">
+        </label>
+
+
+        <span class="newLine"></span>
+
+        <input type="submit"/>
+
+      </form>
+
+    </section>
+
+    <section>
+      <p>
+        <a href="/list_greeted">View DB</a>
+      </p>
+    </section>
+  </body>
+
+</html>

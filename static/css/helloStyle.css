@@ -1,0 +1,56 @@
+h2 {
+  color: brown;
+}
+
+div.aMenuItem{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: solid brown thin;
+  padding: 1%;
+}
+
+div.aMenuItemLeft{
+  text-overflow: wrap;
+  width: 50%;
+}
+
+div.aMenuItemRight{
+  width: 50%;
+}
+
+p.outerNameClass{
+  text-decoration: underline;
+}
+
+span.innerNameClass {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p.priceClass {
+  padding-left: 5%;
+}
+
+p.descClass{
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  font-style: italic;
+}
+
+img {
+  height: 90%;
+  width: 90%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+section#menuItems {
+  /* A garish pink colour to see that its working as expected */
+  background-color: ivory;
+  padding: 2.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 2.5%;
+}
